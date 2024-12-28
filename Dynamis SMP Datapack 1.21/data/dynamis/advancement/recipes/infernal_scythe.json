@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "infernal_scythe_craft": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "recipe_id": "dynamis:infernal_scythe"
+      }
+    }
+  },
+  "rewards": {
+    "function": "dynamis:crafting/infernal_scythe"
+  }
+}

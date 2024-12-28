@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "apollo_sunblade_craft": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "recipe_id": "dynamis:apollo_sunblade"
+      }
+    }
+  },
+  "rewards": {
+    "function": "dynamis:crafting/apollo_sunblade"
+  }
+}

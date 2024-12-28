@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "god_upgrader_craft": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "recipe_id": "dynamis:god_upgrader"
+      }
+    }
+  },
+  "rewards": {
+    "function": "dynamis:crafting/god_upgrader"
+  }
+}

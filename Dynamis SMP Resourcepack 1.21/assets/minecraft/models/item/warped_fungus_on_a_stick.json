@@ -1,0 +1,14 @@
+{
+ "parent": "item/handheld",
+ "textures": {
+  "layer0": "item/warped_fungus_on_a_stick"
+ },
+
+ "overrides": [
+  {"predicate": {"custom_model_data": 723140}, "model": "item/dynamis/apollo_sunblade"},
+  {"predicate": {"custom_model_data": 723141}, "model": "item/dynamis/infernal_scythe"},
+  {"predicate": {"custom_model_data": 723142}, "model": "item/dynamis/phobos_wrath"},
+  {"predicate": {"custom_model_data": 723143}, "model": "item/dynamis/trident_of_poseidon"},
+  {"predicate": {"custom_model_data": 723144}, "model": "item/dynamis/upgrader"}
+ ]
+}

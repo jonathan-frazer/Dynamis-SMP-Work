@@ -1,0 +1,3 @@
+advancement revoke @s only dynamis:drops/moonfang_bow
+
+summon item ~ ~ ~ {PickupDelay:0,Invulnerable:1b,Item:{id:"minecraft:bow",count:1,components:{"minecraft:custom_name":'{"color":"light_purple","italic":false,"text":"Moonfang Bow"}',"minecraft:unbreakable":{show_in_tooltip:false},"minecraft:fire_resistant":{},"minecraft:rarity":"epic","minecraft:repair_cost":999,"minecraft:custom_model_data":723140,"minecraft:custom_data":{DynamisWeapon:1b,DynamisWeaponID:4b},"minecraft:enchantments":{levels:{"minecraft:unbreaking":3},show_in_tooltip:false}}}}

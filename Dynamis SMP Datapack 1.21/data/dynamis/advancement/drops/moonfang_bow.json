@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "trident_craft": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player"
+          },
+          "entity": {
+            "type": "minecraft:ender_dragon"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "dynamis:crafting/moonfang_bow"
+    }
+  }

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "trident_craft": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player"
+          },
+          "entity": {
+            "type": "minecraft:elder_guardian"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "dynamis:crafting/trident_of_poseidon"
+    }
+  }

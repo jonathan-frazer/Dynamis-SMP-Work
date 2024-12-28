@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "RGR",
+        " R "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:mace"
+        },
+        "R": {
+            "item": "minecraft:red_tulip"
+        },
+        "G": {
+            "item": "minecraft:golden_sword"
+        }
+    },
+    "result": {
+        "id": "minecraft:light",
+        "count": 1
+    }
+}

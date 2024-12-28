@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "aegis_of_wisdom_craft": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "recipe_id": "dynamis:aegis_of_wisdom"
+      }
+    }
+  },
+  "rewards": {
+    "function": "dynamis:crafting/aegis_of_wisdom"
+  }
+}

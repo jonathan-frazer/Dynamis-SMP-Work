@@ -1,0 +1,6 @@
+{
+    "parent": "item/bow",
+    "textures": {
+        "layer0": "item/custom/moonfang_bow_pulling_2"
+    }
+}

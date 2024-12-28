@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "DSD",
+        " E "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:totem_of_undying"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        },
+        "S": {
+            "item": "minecraft:shield"
+        },
+        "E": {
+            "item": "minecraft:enchanted_golden_apple"
+        }
+    },
+    "result": {
+        "id": "minecraft:structure_void",
+        "count": 1
+    }
+}

@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "item/custom/apollo_sunblade"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [50, 90, 0],
+			"translation": [0, 6, 3],
+			"scale": [1, 1.16, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [50, -90, 0],
+			"translation": [0, 5.5, 2.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [55, 90, 0],
+			"translation": [0, 7.25, 2.25],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"firstperson_lefthand": {
+			"rotation": [55, -90, 0],
+			"translation": [0.75, 7, 1.75],
+			"scale": [0.65, 0.65, 0.65]
+		},
+		"ground": {
+			"translation": [0, 2, 0]
+		},
+		"gui": {
+			"translation": [0, 0.25, 0]
+		},
+		"fixed": {
+			"scale": [1.25, 1.25, 1.25]
+		}
+	}
+}
