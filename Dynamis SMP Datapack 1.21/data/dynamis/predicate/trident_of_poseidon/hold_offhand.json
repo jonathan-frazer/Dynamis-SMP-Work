@@ -1,16 +1,16 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
       "type": "minecraft:player",
-      "equipment": {
-        "offhand": {
-          "items": "minecraft:warped_fungus_on_a_stick",
-          "count": 1,
-          "components": {
-            "minecraft:custom_data": "{DynamisWeapon:1b,DynamisWeaponID:6b}"
+      "slots": 
+      {
+        "weapon.offhand": {
+          "items":"warped_fungus_on_a_stick",
+          "predicates": {
+            "minecraft:custom_data": {"DynamisWeaponID":6,"DynamisWeapon":true}
           }
         }
       }
     }
-  }
+}

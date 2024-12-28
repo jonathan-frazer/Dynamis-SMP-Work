@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "location": {
+                    "can_see_sky": true
+                }
+            }
+        },
+        {
+            "condition": "minecraft:time_check",
+            "value": {
+                "min": 0,
+                "max": 11999
+            }
+        }
+    ]
+}

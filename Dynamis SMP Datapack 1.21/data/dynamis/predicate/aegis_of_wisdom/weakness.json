@@ -1,0 +1,17 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "effects": {
+        "minecraft:slowness": {
+          "amplifier": 0,
+          "visible": false,
+          "duration": {
+            "min": 0,
+            "max": 20
+          }
+        }
+      }
+    }
+  }

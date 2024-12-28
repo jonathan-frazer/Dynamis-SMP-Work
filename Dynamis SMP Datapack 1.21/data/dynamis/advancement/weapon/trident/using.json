@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "trident_use": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player"
+          },
+          "item": {
+            "items": "minecraft:trident",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "DynamisWeaponID": 6,
+                "DynamisWeapon": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "dynamis:weapon/trident/2_use_trident"
+    }
+  }
