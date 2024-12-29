@@ -5,10 +5,9 @@
       "type": "minecraft:player",
       "slots": 
       {
-        "weapon.offhand": {
-          "items":"warped_fungus_on_a_stick",
+        "weapon.*": {
           "predicates": {
-            "minecraft:custom_data": {"DynamisWeaponID":6,"DynamisWeapon":true}
+            "minecraft:custom_data": {"DynamisWeaponID":6,"DynamisWeapon":true,"Upgraded":true}
           }
         }
       }

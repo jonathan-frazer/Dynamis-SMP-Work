@@ -5,9 +5,10 @@
       "type": "minecraft:player",
       "slots": 
       {
-        "weapon.*": {
+        "weapon.offhand": {
+          "items":"trident",
           "predicates": {
-            "minecraft:custom_data": {"DynamisWeaponID":6,"DynamisWeapon":true}
+            "minecraft:custom_data": {"DynamisWeaponID":6,"DynamisWeapon":true,"Upgraded":true}
           }
         }
       }

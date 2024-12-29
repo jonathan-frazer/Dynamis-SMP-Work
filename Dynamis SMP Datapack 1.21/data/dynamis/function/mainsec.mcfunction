@@ -1,3 +1,6 @@
+#Special Ability Cooldown
+scoreboard players remove @a[scores={dynamisSpcAbility=1..}] dynamisSpcAbility 1
+
 #Aegis of Wisdom
     #Weakness
 
@@ -20,9 +23,10 @@
 
 #Trident
     #Weakness
-    execute as @a[predicate=dynamis:trident_of_poseidon/hold_either] positioned as @s unless block ~ ~0.5 ~ water run effect give @s hunger 1 0 true
+    execute as @a[predicate=dynamis:trident_of_poseidon/normal/hold_either] positioned as @s unless block ~ ~0.5 ~ water run effect give @s hunger 1 0 true
 
 #Upgrader
-execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",count:1,components:{"minecraft:custom_model_data":723144,"minecraft:custom_data":{DynamisWeapon:1b,GodUpgrader:1b}}}}] at @s run function dynamis:weapon/upgrader/0
+    execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",count:1,components:{"minecraft:custom_model_data":723144,"minecraft:custom_data":{DynamisWeapon:1b,GodUpgrader:1b}}}}] at @s run function dynamis:weapon/upgrader/0
+
 
 schedule function dynamis:mainsec 19t

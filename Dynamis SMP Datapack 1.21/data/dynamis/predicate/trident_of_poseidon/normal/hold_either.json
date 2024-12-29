@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+      "type": "minecraft:player",
+      "slots": 
+      {
+        "weapon.*": {
+          "predicates": {
+            "minecraft:custom_data": {"DynamisWeaponID":6,"DynamisWeapon":true,"Upgraded":false}
+          }
+        }
+      }
+    }
+}

@@ -1,4 +1,4 @@
 scoreboard players reset @s tridentReturn
 scoreboard players reset @s tridentRevert
 
-give @s warped_fungus_on_a_stick[custom_model_data=723143,custom_name='{"color":"aqua","italic":false,"text":"Trident of Poseidon"}',custom_data={DynamisWeapon:1b,DynamisWeaponID:6b}] 1
+give @s warped_fungus_on_a_stick[custom_name='{"color":"dark_aqua","italic":false,"text":"Trident Of Poseidon"}',minecraft:unbreakable={show_in_tooltip:false},minecraft:fire_resistant={},minecraft:repair_cost=999,minecraft:custom_model_data=723143,minecraft:custom_data={DynamisWeapon:1b,DynamisWeaponID:6b,Upgraded:false},minecraft:attribute_modifiers={modifiers:[{id:"attack_damage",type:"generic.attack_damage",amount:8,operation:"add_value",slot:"mainhand"},{id:"attack_speed",type:"generic.attack_speed",amount:-2.9,operation:"add_value"}],show_in_tooltip:true}]

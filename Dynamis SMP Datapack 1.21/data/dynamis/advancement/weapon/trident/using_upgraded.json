@@ -13,7 +13,7 @@
               "minecraft:custom_data": {
                 "DynamisWeaponID": 6,
                 "DynamisWeapon": true,
-                "Upgraded": false
+                "Upgraded": true
               }
             }
           }
@@ -21,6 +21,6 @@
       }
     },
     "rewards": {
-      "function": "dynamis:weapon/trident/2_use_trident"
+      "function": "dynamis:weapon/trident_of_poseidon/2_use_trident"
     }
   }
