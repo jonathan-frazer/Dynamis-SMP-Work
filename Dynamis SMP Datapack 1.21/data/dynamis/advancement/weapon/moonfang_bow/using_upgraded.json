@@ -1,0 +1,26 @@
+{
+    "criteria": {
+      "trident_use": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player"
+          },
+          "item": {
+            "items": "minecraft:bow",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "DynamisWeaponID": 4,
+                "DynamisWeapon": true,
+                "Upgraded": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "dynamis:weapon/moonfang_bow/2_upgrade_draw"
+    }
+  }

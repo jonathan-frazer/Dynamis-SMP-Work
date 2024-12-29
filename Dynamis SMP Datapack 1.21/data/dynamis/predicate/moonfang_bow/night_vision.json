@@ -1,0 +1,17 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "effects": {
+        "minecraft:night_vision": {
+          "amplifier": 87,
+          "visible": false,
+          "duration": {
+            "min": 400,
+            "max": 500
+          }
+        }
+      }
+    }
+  }

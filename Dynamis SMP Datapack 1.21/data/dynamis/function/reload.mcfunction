@@ -21,4 +21,6 @@ scoreboard objectives add SunDoTGiver dummy
 
 #Moonfang Bow
 scoreboard objectives add MoonDoTGiver dummy
+scoreboard objectives add lunarBarrageTrigger dummy
+scoreboard objectives add lunarBarrageCharge dummy
 scoreboard objectives add SRXIIBow used:bow

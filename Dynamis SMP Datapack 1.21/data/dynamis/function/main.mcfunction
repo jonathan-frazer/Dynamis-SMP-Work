@@ -18,9 +18,22 @@
     effect give @a[predicate=dynamis:apollo_sunblade/hold_either,predicate=dynamis:apollo_sunblade/sunlight,predicate=!dynamis:apollo_sunblade/regneration] regeneration 1 2 true
 
 #Moonfang Bow
+    #Lunar Barrage
+    scoreboard players add @a[scores={lunarBarrageTrigger=1..}] lunarBarrageTrigger 1
+    execute as @a[scores={lunarBarrageTrigger=3..}] run function dynamis:weapon/moonfang_bow/3_lunar_barrage_check
+    execute as @a[predicate=dynamis:moonfang_bow/either_level/hold_either,scores={SRXIIBow=1..3}] at @s run scoreboard players reset @s lunarBarrageTrigger
+    execute as @a[scores={lunarBarrageCharge=1..}] run function dynamis:weapon/moonfang_bow/lunar_barrage_fx
+    execute as @a[scores={lunarBarrageCharge=..0}] run function dynamis:weapon/moonfang_bow/6_lunar_barrage_end
+
     #Secondary Stuff
-    execute as @a[predicate=dynamis:moonfang_bow/hold_either,predicate=dynamis:moonfang_bow/boost,scores={SRXIIBow=1..3}] at @s run function dynamis:weapon/moonfang_bow/0_shoot_arrow
-    execute as @e[type=arrow,name="moonfang_arrow"] run function dynamis:weapon/moonfang_bow/1_moon_arrow
+        #Night Vision
+        effect give @a[predicate=dynamis:moonfang_bow/either_level/hold_either,predicate=!dynamis:moonfang_bow/weakness] night_vision 25 87 true
+        effect clear @a[predicate=!dynamis:moonfang_bow/either_level/hold_either,predicate=dynamis:moonfang_bow/night_vision] night_vision
+        effect clear @a[predicate=dynamis:moonfang_bow/weakness,predicate=dynamis:moonfang_bow/night_vision] night_vision
+
+        #Moon Arrow
+        execute as @a[predicate=dynamis:moonfang_bow/either_level/hold_either,predicate=dynamis:moonfang_bow/boost,scores={SRXIIBow=1..3}] at @s run function dynamis:weapon/moonfang_bow/0_shoot_arrow
+        execute as @e[type=arrow,name="moonfang_arrow"] run function dynamis:weapon/moonfang_bow/1_moon_arrow
 
 #Trident
     #Working

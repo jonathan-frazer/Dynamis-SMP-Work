@@ -1,0 +1,26 @@
+{
+    "criteria": {
+      "lunar_barrage": {
+        "trigger": "minecraft:shot_crossbow",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player"
+          },
+          "item": {
+            "items": "minecraft:crossbow",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "DynamisWeaponID": 4,
+                "DynamisWeapon": true,
+                "Upgraded": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "dynamis:weapon/moonfang_bow/5_lunar_barrage_use"
+    }
+  }
