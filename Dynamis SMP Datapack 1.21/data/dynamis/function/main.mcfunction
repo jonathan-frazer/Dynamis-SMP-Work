@@ -4,9 +4,23 @@
     effect clear @a[predicate=!dynamis:aegis_of_wisdom/hold_either,predicate=dynamis:aegis_of_wisdom/weakness] slowness
 
 #Infernal Scythe
+    #Secondary Stuff
+        #Fire Resistance
+        effect give @a[predicate=dynamis:infernal_scythe/hold_either] fire_resistance 1 87 true
+        effect clear @a[predicate=!dynamis:infernal_scythe/hold_either,predicate=dynamis:infernal_scythe/fire_resistance] fire_resistance
+
     #Weakness
     effect give @a[predicate=dynamis:infernal_scythe/hold_either] glowing 1 87 true
     effect clear @a[predicate=!dynamis:infernal_scythe/hold_either,predicate=dynamis:infernal_scythe/weakness] glowing
+
+#Apollo Sunblade
+    #Secondary Stuff
+    effect give @a[predicate=dynamis:apollo_sunblade/hold_either,predicate=dynamis:apollo_sunblade/regeneration] regeneration 1 2 true
+
+#Moonfang Bow
+    #Secondary Stuff
+    execute as @a[predicate=dynamis:moonfang_bow/hold_either,predicate=dynamis:moonfang_bow/boost,scores={SRXIIBow=1..3}] at @s run function dynamis:weapon/moonfang_bow/0_shoot_arrow
+    execute as @e[type=arrow,name="moonfang_arrow"] run function dynamis:weapon/moonfang_bow/1_moon_arrow
 
 #Trident
     #Working
@@ -33,4 +47,5 @@
     execute as @a[predicate=dynamis:trident_of_poseidon/hold_either] positioned as @s if block ~ ~0.5 ~ water run effect clear @s hunger
 
 scoreboard players reset @a SRXIIClick
+scoreboard players reset @a SRXIIBow
 scoreboard players reset @a tridentThrow

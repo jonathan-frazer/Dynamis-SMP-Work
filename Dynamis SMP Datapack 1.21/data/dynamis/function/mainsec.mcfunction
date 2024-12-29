@@ -3,15 +3,16 @@
 
 #Apollo Sunblade
     #Weakness
-    execute as @a[predicate=dynamis:apollo_sunblade/hold_either] if predicate dynamis:apollo_sunblade/weakness run scoreboard players add @s SunDoTGiver 1
+    execute as @a[predicate=dynamis:apollo_sunblade/hold_either,predicate=dynamis:apollo_sunblade/weakness] run scoreboard players add @s SunDoTGiver 1
     execute as @a[scores={SunDoTGiver=2..}] run function dynamis:weapon/apollo_sunblade/weakness
 
 #Infernal Scythe
-    #Weakness
+    #Strength
+    execute in minecraft:the_nether as @a[predicate=dynamis:infernal_scythe/hold_either,x=0] run effect give @s strength 1 1 true
     
 #Moonfang Bow
     #Weakness
-    execute as @a[predicate=dynamis:moonfang_bow/hold_either] if predicate dynamis:moonfang_bow/hold_either run scoreboard players add @s MoonDoTGiver 1
+    execute as @a[predicate=dynamis:moonfang_bow/hold_either,predicate=dynamis:moonfang_bow/weakness] run scoreboard players add @s MoonDoTGiver 1
     execute as @a[scores={MoonDoTGiver=2..}] run function dynamis:weapon/moonfang_bow/weakness
 
 #Phobos Wrath

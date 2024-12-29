@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "effects": {
+      "minecraft:fire_resistance": {
+        "amplifier": 87,
+        "visible": false,
+        "duration": {
+          "min": 0,
+          "max": 20
+        }
+      }
+    }
+  }
+}

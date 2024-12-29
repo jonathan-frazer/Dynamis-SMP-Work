@@ -1,0 +1,26 @@
+{
+    "criteria": {
+      "aegis_block": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player",
+            "slots": {
+              "weapon.*": {
+                "items":"minecraft:shield",
+                "predicates": {
+                    "minecraft:custom_data": {"DynamisWeaponID":1,"DynamisWeapon":true}
+                }
+              }
+            }
+          },
+          "damage": {
+            "blocked": true
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "dynamis:weapon/aegis_of_wisdom/0"
+    }
+  }

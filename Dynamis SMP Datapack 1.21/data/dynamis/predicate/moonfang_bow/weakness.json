@@ -5,6 +5,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
+                "type": "minecraft:player",
                 "location": {
                     "can_see_sky": true
                 }

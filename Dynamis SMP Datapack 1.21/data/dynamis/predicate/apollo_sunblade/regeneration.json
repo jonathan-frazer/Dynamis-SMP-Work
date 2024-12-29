@@ -1,0 +1,38 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+              "type": "minecraft:player",
+              "location": {
+                  "can_see_sky": true
+              }
+          }
+      },
+      {
+          "condition": "minecraft:time_check",
+          "value": {
+              "min": 0,
+              "max": 11999
+          }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:player",
+          "flags": {
+            "is_sprinting": false
+          },
+          "movement": {
+            "speed": {
+              "min": 0,
+              "max": 0.5
+            }
+          }
+        }
+      }
+    ]
+  }
