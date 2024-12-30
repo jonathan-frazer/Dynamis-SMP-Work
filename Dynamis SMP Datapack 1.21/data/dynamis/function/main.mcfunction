@@ -1,3 +1,6 @@
+#Action Bar
+execute as @a[predicate=dynamis:holding_upgraded_weapon] unless score @s dynamisSpcAbility matches 1.. run title @s actionbar {"color":"#00F269","text":"! Special Attack Ready !"}
+
 #Aegis Of Wisdom
     #Weakness
     effect give @a[predicate=dynamis:aegis_of_wisdom/hold_either] slowness 1 0 true
