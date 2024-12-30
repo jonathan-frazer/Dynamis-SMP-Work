@@ -1,5 +1,4 @@
 scoreboard players reset @s lunarBarrageCharge
-scoreboard players set @s dynamisSpcAbility 3
 
 #Remove Cross Bow
 kill @e[type=item,nbt={Item:{id:"minecraft:crossbow",components:{"minecraft:custom_data":{DynamisWeapon:true,DynamisWeaponID:4,Upgraded:true}}}},limit=1]

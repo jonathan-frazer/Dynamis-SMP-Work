@@ -1,0 +1,26 @@
+{
+    "criteria": {
+      "trident_use": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": {
+            "type": "minecraft:player"
+          },
+          "item": {
+            "items": "minecraft:shield",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": {
+                "DynamisWeaponID":1,
+                "DynamisWeapon": true,
+                "Upgraded": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "dynamis:weapon/aegis_of_wisdom/2_shield_use"
+    }
+  }

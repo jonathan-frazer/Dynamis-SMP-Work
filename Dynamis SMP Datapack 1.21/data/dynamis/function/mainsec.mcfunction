@@ -1,5 +1,5 @@
 #Special Ability Cooldown
-scoreboard players remove @a[scores={dynamisSpcAbility=1..}] dynamisSpcAbility 1
+execute as @a[scores={dynamisSpcAbility=1..}] unless score @s lunarBarrageCharge matches 1.. unless score @s divineReflectionDur matches 1.. unless score @s abyssalStrikeDur matches 1.. run scoreboard players remove @s dynamisSpcAbility 1
 
 #Aegis of Wisdom
     #Weakness
@@ -11,7 +11,7 @@ scoreboard players remove @a[scores={dynamisSpcAbility=1..}] dynamisSpcAbility 1
 
 #Infernal Scythe
     #Strength
-    execute in minecraft:the_nether as @a[predicate=dynamis:infernal_scythe/hold_either,x=0] run effect give @s strength 1 1 true
+    execute in minecraft:the_nether as @a[predicate=dynamis:infernal_scythe/either_level/hold_either,x=0] run effect give @s strength 1 1 true
     
 #Moonfang Bow
     #Weakness

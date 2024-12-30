@@ -1,3 +1,3 @@
 #Tidal Wave dmg
-damage @s 3 drown
-execute positioned as @s run tp @s ^ ^ ^0.5
+damage @s 2.0 magic
+execute positioned as @s run tp @s ^ ^ ^1

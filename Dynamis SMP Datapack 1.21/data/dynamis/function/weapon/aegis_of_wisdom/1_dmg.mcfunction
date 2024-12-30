@@ -1,5 +1,5 @@
 #Deal Fire Damage
-damage @s 3.0 on_fire
+damage @s 1.0 on_fire
 data modify entity @s Fire set value 60s
 
 #Fire

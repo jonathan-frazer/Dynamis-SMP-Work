@@ -6,13 +6,8 @@
       "slots": 
       {
         "weapon.*": {
-          "items": [
-            "warped_fungus_on_a_stick",
-            "bow",
-            "shield"
-          ],
           "predicates": {
-            "minecraft:custom_data": {"DynamisWeapon":true,"Upgraded":true}
+            "minecraft:custom_data": {"DynamisWeaponID":3,"DynamisWeapon":true,"Upgraded":true}
           }
         }
       }

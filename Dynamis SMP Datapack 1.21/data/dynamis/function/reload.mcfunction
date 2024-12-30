@@ -9,12 +9,19 @@ scoreboard objectives add SRXIITimer dummy
 #MAIN Ability Cooldown
 scoreboard objectives add dynamisSpcAbility dummy
 
-#Trident Return
+#Trident of Poseidon
 scoreboard objectives add tridentThrow used:trident
 scoreboard objectives add tridentReturn dummy
 scoreboard objectives add tridentRevert dummy
 scoreboard objectives add tridentUpReturn dummy
 scoreboard objectives add tridentUpRevert dummy
+
+#Aegis of Wisdom
+scoreboard objectives add aegisLatcher dummy
+scoreboard objectives add divineReflectionDur dummy
+
+#Infernal Scythe
+scoreboard objectives add abyssalStrikeDur dummy
 
 #Sunblade
 scoreboard objectives add SunDoTGiver dummy

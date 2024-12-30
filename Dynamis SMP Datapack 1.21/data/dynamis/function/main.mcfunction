@@ -2,19 +2,33 @@
 execute as @a[predicate=dynamis:holding_upgraded_weapon] unless score @s dynamisSpcAbility matches 1.. run title @s actionbar {"color":"#00F269","text":"! Special Attack Ready !"}
 
 #Aegis Of Wisdom
+    #Divine Protection
+        #Latching System
+        scoreboard players add @a[scores={aegisLatcher=1..5}] aegisLatcher 1
+        execute as @a[scores={aegisLatcher=4}] run advancement revoke @s[advancements={dynamis:weapon/aegis_of_wisdom/use=true}] only dynamis:weapon/aegis_of_wisdom/use
+        execute as @a[scores={aegisLatcher=5}] if entity @s[advancements={dynamis:weapon/aegis_of_wisdom/use=false}] if score @s dynamisSpcAbility matches 0 run function dynamis:weapon/aegis_of_wisdom/5_divine_activate
+        execute as @a[scores={aegisLatcher=6..},advancements={dynamis:weapon/aegis_of_wisdom/using=false}] run function dynamis:weapon/aegis_of_wisdom/6_close_latch
+
+    execute as @a[scores={divineReflectionDur=1..}] run function dynamis:weapon/aegis_of_wisdom/7_divine_reflection_dur
+
     #Weakness
     effect give @a[predicate=dynamis:aegis_of_wisdom/hold_either] slowness 1 0 true
     effect clear @a[predicate=!dynamis:aegis_of_wisdom/hold_either,predicate=dynamis:aegis_of_wisdom/weakness] slowness
 
 #Infernal Scythe
+    #Abyssal Strike
+    execute as @a[predicate=dynamis:infernal_scythe/upgraded/hold_either,scores={SRXIIClick=1..3}] run function dynamis:weapon/infernal_scythe/0_activate
+    execute as @a[scores={abyssalStrikeDur=1..}] run function dynamis:weapon/infernal_scythe/1_abyssal_dur
+    execute as @e[type=area_effect_cloud,name="abyssalTremor"] at @s run function dynamis:weapon/infernal_scythe/4_tremor_dur
+
     #Secondary Stuff
         #Fire Resistance
-        effect give @a[predicate=dynamis:infernal_scythe/hold_either] fire_resistance 1 87 true
-        effect clear @a[predicate=!dynamis:infernal_scythe/hold_either,predicate=dynamis:infernal_scythe/fire_resistance] fire_resistance
+        effect give @a[predicate=dynamis:infernal_scythe/either_level/hold_either] fire_resistance 1 87 true
+        effect clear @a[predicate=!dynamis:infernal_scythe/either_level/hold_either,predicate=dynamis:infernal_scythe/fire_resistance] fire_resistance
 
     #Weakness
-    effect give @a[predicate=dynamis:infernal_scythe/hold_either] glowing 1 87 true
-    effect clear @a[predicate=!dynamis:infernal_scythe/hold_either,predicate=dynamis:infernal_scythe/weakness] glowing
+    effect give @a[predicate=dynamis:infernal_scythe/either_level/hold_either] glowing 1 87 true
+    effect clear @a[predicate=!dynamis:infernal_scythe/either_level/hold_either,predicate=dynamis:infernal_scythe/weakness] glowing
 
 #Apollo Sunblade
     #Secondary Stuff

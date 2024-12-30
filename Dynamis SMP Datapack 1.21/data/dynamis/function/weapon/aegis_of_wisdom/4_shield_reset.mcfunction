@@ -1,0 +1,1 @@
+advancement revoke @a[advancements={dynamis:weapon/aegis_of_wisdom/using=true}] only dynamis:weapon/aegis_of_wisdom/using
