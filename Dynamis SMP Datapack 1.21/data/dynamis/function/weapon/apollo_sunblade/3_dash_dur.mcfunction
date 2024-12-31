@@ -3,7 +3,7 @@ scoreboard players remove @s harmoniousDash 1
 
 #Move in the Given Direction
 execute positioned as @s as @n[type=area_effect_cloud,name="harmoniousDashPtr",distance=..3] run tp @s ~ ~ ~
-execute rotated as @n[type=area_effect_cloud,name="harmoniousDashPtr",distance=..3] positioned ^ ^ ^1.05 if block ~ ~0.5 ~ #dynamis:passable if block ~ ~1.5 ~ #dynamis:passable positioned ^ ^ ^0.50 if block ~ ~0.5 ~ #dynamis:passable if block ~ ~1.5 ~ #dynamis:passable run tp @s ^ ^ ^-0.05
+execute rotated as @n[type=area_effect_cloud,name="harmoniousDashPtr",distance=..3] positioned ^ ^ ^1.05 if block ~ ~0.5 ~ #dynamis:passable if block ~ ~1.5 ~ #dynamis:passable positioned ^ ^ ^1.05 if block ~ ~0.5 ~ #dynamis:passable if block ~ ~1.5 ~ #dynamis:passable run tp @s ^ ^ ^-0.05
 
 #Particle Effects
 particle dust{scale:1.5,color:[1.00,1.00,0.00]} ~ ~0.5 ~ 0.35 0.5 0.35 0.001 7 force
