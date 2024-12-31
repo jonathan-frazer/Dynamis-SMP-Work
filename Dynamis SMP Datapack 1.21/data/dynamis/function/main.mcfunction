@@ -17,7 +17,7 @@ execute as @a[predicate=dynamis:holding_upgraded_weapon] unless score @s dynamis
 
 #Infernal Scythe
     #Abyssal Strike
-    execute as @a[predicate=dynamis:infernal_scythe/upgraded/hold_either,scores={SRXIIClick=1..3}] run function dynamis:weapon/infernal_scythe/0_activate
+    execute as @a[predicate=dynamis:infernal_scythe/upgraded/hold_either,scores={SRXIIClick=1..3}] unless score @s dynamisSpcAbility matches 1.. run function dynamis:weapon/infernal_scythe/0_activate
     execute as @a[scores={abyssalStrikeDur=1..}] run function dynamis:weapon/infernal_scythe/1_abyssal_dur
     execute as @e[type=area_effect_cloud,name="abyssalTremor"] at @s run function dynamis:weapon/infernal_scythe/4_tremor_dur
 
@@ -31,8 +31,17 @@ execute as @a[predicate=dynamis:holding_upgraded_weapon] unless score @s dynamis
     effect clear @a[predicate=!dynamis:infernal_scythe/either_level/hold_either,predicate=dynamis:infernal_scythe/weakness] glowing
 
 #Apollo Sunblade
+    #Harmonius Dash
+    execute as @a[predicate=dynamis:apollo_sunblade/upgraded/hold_either,scores={SRXIIClick=1..3}] unless score @s dynamisSpcAbility matches 1.. run function dynamis:weapon/apollo_sunblade/1_dash_activate
+    execute as @a[scores={harmoniousDash=1..}] at @s run function dynamis:weapon/apollo_sunblade/3_dash_dur
+
     #Secondary Stuff
-    effect give @a[predicate=dynamis:apollo_sunblade/hold_either,predicate=dynamis:apollo_sunblade/sunlight,predicate=!dynamis:apollo_sunblade/regneration] regeneration 1 2 true
+    effect give @a[predicate=dynamis:apollo_sunblade/either_level/hold_either,predicate=dynamis:apollo_sunblade/sunlight,predicate=!dynamis:apollo_sunblade/regneration] regeneration 1 2 true
+
+#Phobos Wrath
+    #Phantom Strike
+    execute as @a[predicate=dynamis:phobos_wrath/upgraded/hold_either,scores={SRXIIClick=1..3}] unless score @s dynamisSpcAbility matches 1.. run function dynamis:weapon/phobos_wrath/2_activate
+    execute as @a[scores={dynPhantomStrike=1..}] at @s run function dynamis:weapon/phobos_wrath/3_phantom_strike_dur
 
 #Moonfang Bow
     #Lunar Barrage

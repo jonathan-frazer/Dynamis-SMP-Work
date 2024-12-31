@@ -24,7 +24,11 @@ scoreboard objectives add divineReflectionDur dummy
 scoreboard objectives add abyssalStrikeDur dummy
 
 #Sunblade
+scoreboard objectives add harmoniousDash dummy
 scoreboard objectives add SunDoTGiver dummy
+
+#Phobos Wrath
+scoreboard objectives add dynPhantomStrike dummy
 
 #Moonfang Bow
 scoreboard objectives add MoonDoTGiver dummy

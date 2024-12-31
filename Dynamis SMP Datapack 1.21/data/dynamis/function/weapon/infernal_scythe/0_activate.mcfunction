@@ -9,6 +9,6 @@ effect give @s resistance 1 20 true
 
 #Scores
 scoreboard players set @s abyssalStrikeDur 1
-scoreboard players set @s dynamisSpcAbility 2
+scoreboard players set @s dynamisSpcAbility 42
 scoreboard players reset @s SRXIIClick
 

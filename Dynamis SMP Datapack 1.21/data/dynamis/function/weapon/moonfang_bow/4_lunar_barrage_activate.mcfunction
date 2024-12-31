@@ -15,4 +15,4 @@ execute at @s run playsound entity.ender_dragon.growl master @a[distance=..32] ~
 execute at @s run playsound entity.zombie_villager.cure master @a[distance=..32] ~ ~ ~ 0.75 1.5 1
 
 #Cooldown
-scoreboard players set @s dynamisSpcAbility 7
+scoreboard players set @s dynamisSpcAbility 42

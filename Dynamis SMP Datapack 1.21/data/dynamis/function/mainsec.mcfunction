@@ -1,12 +1,12 @@
 #Special Ability Cooldown
-execute as @a[scores={dynamisSpcAbility=1..}] unless score @s lunarBarrageCharge matches 1.. unless score @s divineReflectionDur matches 1.. unless score @s abyssalStrikeDur matches 1.. run scoreboard players remove @s dynamisSpcAbility 1
+execute as @a[scores={dynamisSpcAbility=1..}] unless score @s lunarBarrageCharge matches 1.. unless score @s divineReflectionDur matches 1.. unless score @s abyssalStrikeDur matches 1.. unless score @s harmoniousDash matches 1.. unless score @s dynPhantomStrike matches 1.. run scoreboard players remove @s dynamisSpcAbility 1
 
 #Aegis of Wisdom
     #Weakness
 
 #Apollo Sunblade
     #Weakness
-    execute as @a[predicate=dynamis:apollo_sunblade/hold_either,predicate=dynamis:apollo_sunblade/weakness] run scoreboard players add @s SunDoTGiver 1
+    execute as @a[predicate=dynamis:apollo_sunblade/either_level/hold_either,predicate=dynamis:apollo_sunblade/weakness] run scoreboard players add @s SunDoTGiver 1
     execute as @a[scores={SunDoTGiver=2..}] run function dynamis:weapon/apollo_sunblade/weakness
 
 #Infernal Scythe

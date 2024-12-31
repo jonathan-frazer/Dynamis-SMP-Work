@@ -1,4 +1,4 @@
-scoreboard players set @s dynamisSpcAbility 3
+scoreboard players set @s dynamisSpcAbility 42
 
 #Action Bar
 title @s actionbar {"color":"dark_aqua","text":"TIDAL WAVE","bold": true}
